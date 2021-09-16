@@ -1,0 +1,4 @@
+.card{
+    width: clamp(230px,460px,460px);
+    height: clamp(289px,578px,578px);
+}

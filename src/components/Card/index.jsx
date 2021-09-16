@@ -4,7 +4,7 @@ import { FrontFace } from '../FrontFace';
 //card
 //wraps front and back faces
 export function Card(){
-    return <div>
+    return <div className="card">
         <FrontFace/>
     </div>
 }
