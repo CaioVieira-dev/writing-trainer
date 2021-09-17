@@ -1,4 +1,14 @@
 .card{
     width: clamp(230px,460px,460px);
     height: clamp(289px,578px,578px);
+
+    position: relative;
+
+    transform-style: preserve-3d;
+
+    transition: transform 1s;
+}
+.card:hover{
+    transform: rotateY(180deg);
+
 }

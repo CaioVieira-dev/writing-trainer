@@ -9,6 +9,10 @@ height: 100%;
 
     align-items: center;
 
+    position:absolute;
+    
+    backface-visibility: hidden;
+
 }
 .canvas{
     width: clamp(230px, 460px,460px);
