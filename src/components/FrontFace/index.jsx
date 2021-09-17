@@ -1,11 +1,10 @@
 import './styles.css'
+import {Romaji} from '../Romaji'
 
 function Canvas(){
     return <canvas className="canvas"/>
 }
-function Romaji(props){
-    return <h3 className="romaji">{props.children}</h3>
-}
+
 
 export function FrontFace(){
 
