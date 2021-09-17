@@ -1,0 +1,8 @@
+.character{
+    width: clamp(230px, 460px,460px);
+
+    height:clamp(230px, 460px,460px);
+    border-radius: 16px 16px 0 0;
+    background-color:gray;
+    justify-self: flex-start;
+}
