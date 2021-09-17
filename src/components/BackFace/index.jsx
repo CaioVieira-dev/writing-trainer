@@ -1,8 +1,9 @@
 import './styles.css'
 import {Romaji} from '../Romaji'
+import placeholder from '../../ex.png'
 
 function Character(){
-    return <img className="character" src="#" alt=""/>
+    return <img className="character" src={placeholder} alt=""/>
 }
 
 export function BackFace(){
