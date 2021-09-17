@@ -1,8 +1,19 @@
+.BackFace{
+    width: 100%;
+height: 100%;
+
+    border-radius: 16px;
+    background-color: #fff;
+    display:flex;
+    flex-direction: column;
+
+    align-items: center;
+}
 .character{
     width: clamp(230px, 460px,460px);
 
     height:clamp(230px, 460px,460px);
     border-radius: 16px 16px 0 0;
-    background-color:gray;
+    background-color:violet;
     justify-self: flex-start;
 }
