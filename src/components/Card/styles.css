@@ -8,7 +8,7 @@
 
     transition: transform 1s;
 }
-.card:hover{
+.card.flipped{
     transform: rotateY(180deg);
 
 }

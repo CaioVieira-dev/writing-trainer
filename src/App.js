@@ -1,12 +1,13 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {Card} from './components/Card'
 import "./App.css"
 
 function App() {
+  const [isFlipped,setIsFlippped] = useState(false)
   return (
     <div id="div-app">
-      
-      <Card />
+      <button type="button" onClick={()=>setIsFlippped(!isFlipped)}>Flip card</button>
+      <Card isFlipped={isFlipped}/>
     </div>
   );
 }
