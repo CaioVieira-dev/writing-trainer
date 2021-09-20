@@ -21,6 +21,11 @@ function History(){
         <PastSnapshot />
         <PastSnapshot />
         <PastSnapshot />
+        <PastSnapshot />
+        <PastSnapshot />
+        <PastSnapshot />
+        <PastSnapshot />
+        <PastSnapshot />
     </div>
 }
 
