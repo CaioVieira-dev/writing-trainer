@@ -6,8 +6,16 @@ function App() {
   const [isFlipped,setIsFlippped] = useState(false)
   return (
     <div id="div-app">
-      <button type="button" onClick={()=>setIsFlippped(!isFlipped)}>Flip card</button>
+      <div class="app-wrapper">
+      <div className="response-wrapper">
+      <button 
+      type="button" 
+      onClick={()=>setIsFlippped(!isFlipped)}
+      className="response">Ver resposta</button>
+            </div>
       <Card isFlipped={isFlipped}/>
+      
+            </div>
     </div>
   );
 }

@@ -1,9 +1,10 @@
 import './styles.css'
 import {Romaji} from '../Romaji'
 import placeholder from '../../ex.png'
+import he from '../../assets/hiragana/he.png'
 
 function Character(){
-    return <img className="character" src={placeholder} alt=""/>
+    return <img className="character" src={he?he:placeholder} alt=""/>
 }
 
 export function BackFace(){
