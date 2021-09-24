@@ -8,7 +8,7 @@ function App() {
   return (
     <div id="div-app">
       <HistoryBar />
-      <div class="app-wrapper">
+      <div className="app-wrapper">
       <div className="response-wrapper">
       <button 
       type="button" 
