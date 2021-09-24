@@ -1,15 +1,24 @@
 import './styles.css'
+import {useState} from 'react'
 import {Romaji} from '../Romaji'
 import placeholder from '../../ex.png'
-import he from '../../assets/hiragana/he.png'
 
-function Character(){
-    return <img className="character" src={he?he:placeholder} alt=""/>
+
+function Character({char}){
+    const [charSrc,setCharSrc] = useState('')
+    if(char){
+        import(`../../assets/hiragana/${char}.png`)
+            .catch((err) => {
+                console.error(err)
+            return})
+             .then((res)=>{setCharSrc(res.default);});
+    }
+    return <img className="character" src={charSrc!==''?charSrc:placeholder} alt=""/>
 }
 
-export function BackFace(){
+export function BackFace(props){
     return <div className="BackFace">
-        <Character />
-        <Romaji>He</Romaji>
+        <Character char={props.character}/>
+        <Romaji>{props.romaji?props.romaji:"Placeholder..."}</Romaji>
     </div>
 }

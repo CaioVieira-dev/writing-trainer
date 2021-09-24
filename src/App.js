@@ -15,7 +15,10 @@ function App() {
       onClick={()=>setIsFlippped(!isFlipped)}
       className="response">Ver resposta</button>
             </div>
-      <Card isFlipped={isFlipped}/>
+      <Card 
+      isFlipped={isFlipped}
+      romaji="Tsu"
+      character="tsu"/>
       
             </div>
     </div>
