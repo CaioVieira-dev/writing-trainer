@@ -13,7 +13,7 @@ function Canvas(){
         ctx.canvas.width = 460;
         ctx.canvas.height = 460;
         
-        ctx.lineWidth = 5;
+        ctx.lineWidth = 15;
         ctx.lineJoin = 'round';
         ctx.lineCap = "round"
 
