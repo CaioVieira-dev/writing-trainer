@@ -2,9 +2,10 @@ import './styles.css'
 import { useRef, useEffect } from 'react'
 import {Romaji} from '../Romaji'
 
-function Canvas(){
+function Canvas({curCharacter}){
     const canvasRef = useRef(null)
     const isDrawing = useRef(false)
+    console.log(curCharacter)
     useEffect(()=>{
         const canvas = canvasRef.current
         const ctx = canvas.getContext('2d')
@@ -12,6 +13,7 @@ function Canvas(){
         
         ctx.canvas.width = 460;
         ctx.canvas.height = 460;
+        ctx.clearRect(0, 0, 460,460)
         
         ctx.lineWidth = 15;
         ctx.lineJoin = 'round';
@@ -46,16 +48,16 @@ function Canvas(){
             canvas.removeEventListener('mouseout', endEvent,false)
             
             }
-    },[isDrawing])
+    },[isDrawing,curCharacter])
 
     return <canvas ref={canvasRef} className="canvas"/>
 }
 
 
-export function FrontFace(){
+export function FrontFace({romaji}){
 
     return <div className="front-face">
-        <Canvas/>
-        <Romaji >He</Romaji>
+        <Canvas curCharacter={romaji}/>
+        <Romaji >{romaji}</Romaji>
         </div>  
 }
